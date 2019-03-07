@@ -54,8 +54,9 @@ at middle index is larger than the value at start index (case 2), and one in whi
 is smaller than the value at end index (case 3). If it is case 2, we look recursively at the second half, or
 from middle to end because the value increases then decreases, which means there is a peak. Similarly, if it
 is case 3, we look recursively at the first half, or from start to middle, because that segment has increasing
-value followed by decreasing value, which implies a peak. The binary search approach reduces time complexity
-to O(logN).
+value followed by decreasing value, which implies a peak. The base cases are when there is only one element
+(return that element) and there are two elements (return the larger one). The binary search approach reduces 
+time complexity to O(logN).
 
 <img src="https://github.com/jhkuang11/codeChallenge/blob/master/results/shift_list_search.png" />
 
