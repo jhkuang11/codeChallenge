@@ -57,6 +57,7 @@ is case 3, we look recursively at the first half, or from start to middle, becau
 value followed by decreasing value, which implies a peak. The binary search approach reduces time complexity
 to O(logN).
 
+<img src="https://github.com/jhkuang11/codeChallenge/blob/master/results/shift_list_search.png" />
 
 ## Most Occurring Triplets (Answer below)
 
@@ -130,7 +131,7 @@ log_file = [
  (('/', '/about', '/purchase'), 1), 
  (('/', '/about', '/features'), 1)]
 ```
-
+<img src="https://github.com/jhkuang11/codeChallenge/blob/master/results/most_occurring_triplet.png" />
 
 
 
