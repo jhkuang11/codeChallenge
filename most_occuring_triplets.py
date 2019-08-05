@@ -1,3 +1,6 @@
+'''
+ignore this file
+'''
 def user_logger(log_file):
     """
     :type log_file: List[Tuple(string, string)]
