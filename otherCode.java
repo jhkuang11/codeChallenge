@@ -60,22 +60,21 @@ public class Main
 	    String portfolio = list[0];
 	    String[] part = portfolio.split(",");
 	    List<String> process = process_string(part);
-		List<Asset> asset = process_asset(process);
-		Collections.sort(asset);
-		System.out.println("Portfolio: "+asset);
-		
-		String benchmark = list[1];
-		String[] bench = benchmark.split(",");
-		List<String> process2 = process_string(bench);
-		List<Asset> asset2 = process_asset(process2);
-		Collections.sort(asset2);
-		System.out.println("Benchmark: "+asset2);
-		transact(asset2, asset);
-		/*
-		if ( asset.get(0).getType().compareTo(asset2.get(1).getType()) != 0 ) {
-		    System.out.println("Not equal");
-		}
-		*/
+	    List<Asset> asset = process_asset(process);
+	    Collections.sort(asset);
+	    System.out.println("Portfolio: "+asset);
+	    String benchmark = list[1];
+	    String[] bench = benchmark.split(",");
+	    List<String> process2 = process_string(bench);
+	    List<Asset> asset2 = process_asset(process2);
+	    Collections.sort(asset2);
+	    System.out.println("Benchmark: "+asset2);
+	    transact(asset2, asset);
+	    /*
+	    if ( asset.get(0).getType().compareTo(asset2.get(1).getType()) != 0 ) {
+	    	System.out.println("Not equal");
+	    }
+	    */
 	}
 	
 	public static void transact(List<Asset> benchmark, List<Asset> portfolio){
