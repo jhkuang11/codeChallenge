@@ -1,4 +1,3 @@
-/*
 import java.util.List;
 import java.util.ArrayList;
 
@@ -7,12 +6,12 @@ public class Main
 	public static void main(String[] args) {
 	    double p = 11.25;
 	    double e = 20;
-		Main.calculateChange(p, e);
+	    Main.calculateChange(p, e);
 	}
 	
 	static double[] coins;
 	static {
-    coins = new double[] {5000,2000,1000,500,200,100,50,20,10,5,2,1};
+		coins = new double[] {5000,2000,1000,500,200,100,50,20,10,5,2,1};
 	}
 	
 	public static void calculateChange(double purchasePrice, double cash) {
@@ -46,8 +45,8 @@ public class Main
 	}
   
 }
-*/
 
+// other part
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
