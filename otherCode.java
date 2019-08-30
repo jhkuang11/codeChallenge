@@ -58,8 +58,8 @@ public class Main
 	    String str = "Vodafone,STOCK,10|Google,STOCK,15|Microsoft,BOND,15:Vodafone,STOCK,15|Google,STOCK,10|Microsoft,BOND,15";
 	    String[] list = str.split(":");
 	    String portfolio = list[0];
-		String[] part = portfolio.split(",");
-		List<String> process = process_string(part);
+	    String[] part = portfolio.split(",");
+	    List<String> process = process_string(part);
 		List<Asset> asset = process_asset(process);
 		Collections.sort(asset);
 		System.out.println("Portfolio: "+asset);
