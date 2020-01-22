@@ -1,0 +1,14 @@
+git add some_file
+git commit -m "comments"
+git push
+
+git checkout -b branch_name
+
+git branch
+git status
+
+git push origin --delete branch_name
+git branch -D branch_name
+
+git reset --hard HEAD~number
+git push --force
