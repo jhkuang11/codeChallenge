@@ -12,3 +12,6 @@ git branch -D branch_name
 
 git reset --hard HEAD~number
 git push --force
+
+git pull
+git merge master
